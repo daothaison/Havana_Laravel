@@ -1,6 +1,6 @@
 build:
   phpunit:
-    image: daothaison/framgia-ci-cli:0.0.1
+    image: daothaison/framgia-ci-cli:0.0.2
     commands:
     - cp .env.testing.example .env
     - composer install
