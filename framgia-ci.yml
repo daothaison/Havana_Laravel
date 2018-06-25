@@ -1,6 +1,6 @@
 build:
   phpunit:
-    image: daothaison/framgia-ci-cli:0.0.2
+    image: daothaison/ci-workspace:0.0.1
     commands:
     - echo sleeping
     - framgia-ci run
