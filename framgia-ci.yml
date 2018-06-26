@@ -2,10 +2,10 @@ build:
   phpunit:
     image: daothaison/ci-workspace:0.0.1
     commands:
-    - echo sleeping
+    - echo sleep1
     - framgia-ci run
-    - echo sleep
-    - sleep 5
+    - echo sleep2
+    - echo sleep3
 services:
   mysql:
     image: mysql:5.7
