@@ -1,8 +1,12 @@
 build:
   phpunit:
-    image: daothaison/ci-workspace:0.0.2
+    image: daothaison/civ3-workspace:latest
     commands:
-    - framgia-ci test-connect 6ad838b3.ngrok.io 443
+    - cp .env.civ3.example .env
+    - composer install
+    - framgia-ci test-connect mysql 3306 60
+    - php artisan migrate --database=mysql_test
+    - framgia-ci test-connect civ3.framgia.vn 443
     - framgia-ci run
 services:
   mysql:
