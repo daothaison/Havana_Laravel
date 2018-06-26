@@ -1,5 +1,5 @@
 # testci1
 Dao thai son
 22
-Chạy lại với framgia-ci-cli 0.2.4
-X
+Chạy lại với framgia-ci-cli 0.2.6
+Image Civ3-workspace
